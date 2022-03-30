@@ -1,12 +1,15 @@
 # Interview Scheduler
 
-An app to make all your interview scheduling needs as easy as a click of a button!
+### An app to make all your interview scheduling needs as easy as a click of a button!
+
+
+#### ***A ReactApp tested with Cypress***
 
 ## Setup
 
 Install dependencies with `npm install`.
 
-** Dependencies: **
+**Dependencies:**
 
     axios: ^0.26.1,
     classnames: "^2.2.6,
@@ -32,3 +35,13 @@ npm test
 ```sh
 npm run storybook
 ```
+
+##
+
+!['DAYS GIF'](https://github.com/Lauffern1995/scheduler/blob/master/docs/Days.gif?raw=true)
+
+!["CREATE"](https://github.com/Lauffern1995/scheduler/blob/master/docs/Create-Appt.gif?raw=true)
+
+!["EDIT"](https://github.com/Lauffern1995/scheduler/blob/master/docs/Edit-Appt.gif?raw=true)
+
+!["DELETE"](https://github.com/Lauffern1995/scheduler/blob/master/docs/Delete.gif?raw=true)
