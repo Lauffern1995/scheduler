@@ -2,8 +2,18 @@
 
 ### An app to make all your interview scheduling needs as easy as a click of a button!
 
+Book, Edit, Delete an interview with a mentor in real time. 
 
-#### ***A ReactApp tested with Cypress***
+**Created with:**
+
+Front-End: React, Axios, JSX, HTML, SASS, JavaScript
+
+Back-End: Express, Node.js, PostgreSQL
+
+
+**Tested with:**
+
+Jest, React Testing Library, Cypress
 
 ## Setup
 
@@ -38,10 +48,14 @@ npm run storybook
 
 ##
 
+***Choose the Weekday you wish to schedule your interview***
 !['DAYS GIF'](https://github.com/Lauffern1995/scheduler/blob/master/docs/Days.gif?raw=true)
 
+***Create your appointment***
 !["CREATE"](https://github.com/Lauffern1995/scheduler/blob/master/docs/Create-Appt.gif?raw=true)
 
+***Edit your appointment***
 !["EDIT"](https://github.com/Lauffern1995/scheduler/blob/master/docs/Edit-Appt.gif?raw=true)
 
+***Delete your appointment***
 !["DELETE"](https://github.com/Lauffern1995/scheduler/blob/master/docs/Delete.gif?raw=true)
