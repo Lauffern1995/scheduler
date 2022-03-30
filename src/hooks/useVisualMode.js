@@ -1,12 +1,13 @@
 import { useState } from "react";
 
-
+// UPDATES WHAT COMPONENTS TO SHOW //
 
 export default function useVisualMode(initial) {
 
   const [mode, setMode] = useState(initial);
   const [history, setHistory] = useState([initial]);
 
+  // Helper func to transition to which components to display
   function transition (mode, replace = false) {
 
     if (!replace){
@@ -19,6 +20,7 @@ export default function useVisualMode(initial) {
     }
   }
 
+  // removes last position of history array to revert to previous state   
   function back () {
     
    

@@ -4,10 +4,12 @@ import classNames from "classnames";
 
 export default function DayListItem(props) {
 
+
+  // appends class names based on selected status/props.spots
   let dayClass = classNames('day-list__item', {'day-list__item--selected': props.selected, 'day-list__item--full': props.spots === 0}) 
 
 
-
+// returns correct text based on props.spot data
   const formatSpots = function(spot) {
     if (spot === 0)  {
 

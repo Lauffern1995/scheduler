@@ -15,7 +15,7 @@ export default function Appointment(props)  {
  
 
   
-  
+  // ** MODES ** //
   const EMPTY = "EMPTY";
   const SHOW = "SHOW";
   const CREATE = 'CREATE';
@@ -32,7 +32,7 @@ export default function Appointment(props)  {
 
 
 
-
+  // saves Form data  and loads saving animation while bookInterview makes ajax call. Once completed will transition to SHOW mode
   function save(name, interviewer) {
     const interview = {
       student: name,
@@ -48,6 +48,8 @@ export default function Appointment(props)  {
   }
 
 
+
+  // deletes interviewListItem, loads deleting animation while cancelInterview makes ajax call. Once completed will transition to empty mode
   function deleteInterview() {
     
     transition(DELETE, true)
@@ -57,10 +59,12 @@ export default function Appointment(props)  {
     
   }
 
+  //loads confirm mode
    function cancelConfirmation() {
     transition(CONFIRM);
   }
-
+ 
+  //loads edit mode
   function edit() {
     transition(EDIT);
   }
@@ -69,7 +73,7 @@ export default function Appointment(props)  {
 
 
 
-
+// check to see if interview is present. loads corresponding mode 
   const { mode, transition, back } = useVisualMode(
     props.interview ? SHOW : EMPTY
   );

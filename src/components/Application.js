@@ -16,6 +16,8 @@ import "components/Application.scss";
 
 export default function Application(props) {
 
+
+// HOOKS FROM useApplicationData //
   const {
     state,
     setDay,
@@ -23,6 +25,7 @@ export default function Application(props) {
     cancelInterview
   } = useApplicationData();
   
+
   const dailyAppointments = getAppointmentsForDay(state, state.day);
   const dailyInterviewers = getInterviewersForDay(state, state.day);
 
