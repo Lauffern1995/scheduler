@@ -1,8 +1,19 @@
 # Interview Scheduler
 
+An app to make all your interview scheduling needs as easy as a click of a button!
+
 ## Setup
 
 Install dependencies with `npm install`.
+
+** Dependencies: **
+
+    axios: ^0.26.1,
+    classnames: "^2.2.6,
+    normalize.css: ^8.0.1,
+    react: ^16.9.0,
+    react-dom: ^16.9.0,
+    react-scripts: 3.0.0
 
 ## Running Webpack Development Server
 
